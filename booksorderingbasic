@@ -1,0 +1,61 @@
+#include <iostream>
+#include <conio.h>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+    int a,en,ba,ar,ma;
+    system("color 3F");
+    cout << "***Books for Summer***" <<endl;
+    cout<< " 1. English for today class 1 = 79BDT"<<endl;
+    cout<< "2. Bangla grammar  class 1 = 65BDT"<<endl;
+    cout<< "3. Arabic language class 1 = 79BDT"<<endl;
+    cout<< "4. Mathematics for class 1 = 79BDT"<<endl;
+    cout<< "5. Exit"<<endl;
+
+    cout<< "Select your books"<<endl;
+    cin>> a;
+    switch(a)
+    {
+    case 1:
+        cout << " Selected book is 'English for today class 1'" <<endl;
+        cout << "how many books do you want?" <<endl;
+        cin >> en;
+        cout << " Your order will be ready within one working day" <<endl;
+        cout <<endl<< " Your total bill is = BDT " <<79*en <<endl;
+        break;
+    case 2:
+        cout << "Selected book is 'Bangla grammar  class 1'" <<endl;
+        cout << "how many books do you want?" <<endl;
+        cin >> ba;
+        cout << " Your order will be ready within one working day" <<endl;
+        cout <<endl<< " Your total bill is = BDT " <<65*ba <<endl;
+        break;
+    case 3:
+        cout << "Selected book is 'Arabic language class 1'" <<endl;
+        cout << "how many books do you want?" <<endl;
+        cin >> ar;
+        cout << " Your order will be ready within one working day" <<endl;
+        cout <<endl<< " Your total bill is = BDT " <<79*ar <<endl;
+        break;
+    case 4:
+        cout << "Selected book is 'Mathematics for class 1'" <<endl;
+        cout << "how many books do you want?" <<endl;
+        cin >> ma;
+        cout << " Your order will be ready within one working day" <<endl;
+        cout <<endl<< " Your total bill is = BDT " <<79*ma <<endl;
+        break;
+    case 5:
+        cout << "program is end" <<endl;
+        break;
+    default:
+        cout << "invalid choice:" <<endl;
+        cout << "Please select a valid book" <<endl;
+
+
+        }
+    getch();
+
+}
